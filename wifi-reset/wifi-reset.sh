@@ -2,7 +2,7 @@
 
 # Wait ~60 seconds until SOME interface exists
 while [ -z $(iwconfig 2> /dev/null | grep -o '^[[:alnum:]]\+') ]; do
-    if [ $i -eq 1 ]; then
+    if [ $i -eq 60 ]; then
         echo "Check your wireless device. 1 minute timeout exceed.";
         exit 1;
     fi
