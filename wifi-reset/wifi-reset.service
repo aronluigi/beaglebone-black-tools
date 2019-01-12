@@ -4,6 +4,6 @@ Description=Wireless Network Reset for connmanctl
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStart=/opt/tools/connmanctl-wifi-reset/wifi-reset.sh
+ExecStart=/bin/sh /opt/tools/connmanctl-wifi-reset/wifi-reset.sh
 [Install]
 WantedBy=multi-user.target
